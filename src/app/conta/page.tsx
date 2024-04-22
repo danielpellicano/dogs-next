@@ -1,5 +1,6 @@
 export default async function ContaPage() {
-    return <main>
+    return (<main>
         <h1>Conta</h1>
     </main>
+    )
 }
