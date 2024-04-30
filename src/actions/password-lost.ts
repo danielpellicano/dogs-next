@@ -1,8 +1,7 @@
 'use server';
 
-import { PASSWORD_LOST } from "@/app/functions/api";
-import apiError from "@/app/functions/api-error";
-
+import { PASSWORD_LOST } from '@/functions/api';
+import apiError from '@/functions/api-error';
 
 export default async function passwordLost(state: {}, formData: FormData) {
   const login = formData.get('login') as string | null;

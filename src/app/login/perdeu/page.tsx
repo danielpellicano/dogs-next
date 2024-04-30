@@ -1,19 +1,16 @@
-import LoginPerdeuForm from "@/components/login/login-perdeu-form"
-import { Metadata } from "next"
-
+import LoginPerdeuForm from '@/components/login/login-perdeu-form';
+import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-    title: 'Perdeu a Senha | Dogs',
-    description: 'Recupere a sua senha'
-}
-
-// export const dynamic = 'force-dynamic';
+  title: 'Perdeu a senha | Dogs',
+  description: 'Recupere a sua senha',
+};
 
 export default async function PerdeuPage() {
-    return (
+  return (
     <div className="animeLeft">
-        <h1 className="title">Perdeu</h1>
-        <LoginPerdeuForm/>
+      <h1 className="title">Perdeu a senha?</h1>
+      <LoginPerdeuForm />
     </div>
-    )
+  );
 }
